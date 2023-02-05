@@ -29,6 +29,6 @@ int main() {
 		cout << "Hello Other Exception" << endl;
 		return 1;
 	}
-	cout << "Hello No Exception" << endl;
+
 	return 0;
 }

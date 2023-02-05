@@ -1,21 +1,39 @@
 #include <iostream>
 #include <string>
+#include <vector>
 
 using namespace std;
 
-int main() {
+void update_int() {
+	throw 1;
+}
 
-	cout << "Do you want Exception?" << endl;
+void update_string() {
+	throw "string";
+}
+
+void update_other() {
+	throw vector<int>();
+}
+
+bool exception_basic(const string& input) {
+	if (input == "int") {
+		update_int();
+	} else if (input == "string") {
+		update_string();
+	} else {
+		update_other();
+	}
+
+	return true;
+}
+
+int main() {
+	cout << "What exception do you want?" << endl;
 	string input;
 	cin >> input;
 	try {
-		if (input == "int") {
-			throw 1;
-		}
-		if (input == "string") {
-			throw "string";
-		}
-		throw 4.3;
+		exception_basic(input);
 	}
 	catch (int i) {
 		cout << "Hello int Exception" << endl;
@@ -29,6 +47,5 @@ int main() {
 		cout << "Hello Other Exception" << endl;
 		return 1;
 	}
-
 	return 0;
 }

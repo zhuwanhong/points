@@ -16,7 +16,7 @@ void update_other() {
 	throw vector<int>();
 }
 
-bool exception_basic(const string& input) {
+bool update_type(const string& input) {
 	if (input == "int") {
 		update_int();
 	} else if (input == "string") {
@@ -29,17 +29,17 @@ bool exception_basic(const string& input) {
 }
 
 int main() {
-	cout << "What exception do you want?" << endl;
+	cout << "What type to update?" << endl;
 	string input;
 	cin >> input;
 	try {
-		exception_basic(input);
+		update_type(input);
 	}
 	catch (int i) {
 		cout << "Hello int Exception" << endl;
 		return 1;
 	}
-	catch (string s) {
+	catch (const char* s) {
 		cout << "Hello string Exception" << endl;
 		return 1;
 	}

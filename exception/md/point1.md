@@ -9,5 +9,4 @@ This is the golden rule. This is why we say C++ can beat Java/C#/Python/whatever
 "string" is const char* instead of std::string.
 - catch(...) kind of meaningless\
 If you are in the catch(...) block, you know nothing about what happened so you don't know what to do. People may say you can do some clean-up but you don't even know of your object is valid or not.
-- Not built-in feature\
-Unlike Java/C# You can't rely on it to avoid crash.
+

@@ -2,7 +2,7 @@
 
 - Basic exception guarantee\
 No memory or resource leak.\
-POINT: RAII
+POINT: [RAII](raii.md)
 - Strong exception guarantee\
 Keep original state.\
 POINT: copy and swap

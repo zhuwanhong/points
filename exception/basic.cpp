@@ -4,15 +4,15 @@
 
 using namespace std;
 
-void update_int() {
+void update_int() /* noexcept */ /* if add noexcept, will reduce binary size */ {
 	throw 1;
 }
 
-void update_string() {
+void update_string() /* noexcept */ /* if add noexcept, will reduce binary size */ {
 	throw "string";
 }
 
-void update_other() {
+void update_other() /* noexcept */ /* if add noexcept, will reduce binary size */ {
 	throw vector<int>();
 }
 
@@ -37,7 +37,7 @@ int main() {
 		return 1;
 	}
 	catch (const char* s) {
-	//catch (string s) {
+	//catch (string s) { //"string" is not std::string type
 		cout << "Hello string Exception" << endl;
 		return 1;
 	}

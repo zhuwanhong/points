@@ -1,5 +1,5 @@
-[Point 1](md/point1.md)
+[Exception overview](md/overview.md)
 
 
-Point 2
+[Exception guarantee](md/guarantee.md)
 

@@ -10,4 +10,4 @@ This is the golden rule in C++. This is why we can proudly declare C++ beats Jav
 - catch(...) kind of meaningless\
 If you are in the catch(...) block, you know nothing about what happened so you don't know what to do. People may say you can do some clean-up but you don't even know if your object is valid or not.
 
-[Back to Exception](../readme.md)
+[Back to Exception](../README.md)

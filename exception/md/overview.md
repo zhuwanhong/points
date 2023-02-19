@@ -1,7 +1,7 @@
 # Exception is BAD
 ###### <sub><sup>(OPINION, not fact)</sup></sub>
 Why
-- Breaks the natual flow of your code\
+- Breaks the natural flow of your code\
 This introduced huge complexity, when I read/write code, for each line I have to check cppreference to find out if throws.
 - Throw/catch type is somehow subtle\
 "string" is const char* instead of std::string.

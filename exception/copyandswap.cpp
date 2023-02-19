@@ -1,19 +1,23 @@
 #include <iostream>
-#include <string>
 #include <vector>
 
 using namespace std;
 
 class A {
 public:
-	A() {
+	A(int c) : count(c) {
 	}
 
 	A& operator++() {
-		/* Increment something */;
+		++count;
+		if (count > 2) {
+			throw 1;
+		}
 		return *this;
 	}
 
+private:
+	int count = 0;
 };
 
 void increment_a(vector<A>& a_vec) {
@@ -24,35 +28,17 @@ void increment_a(vector<A>& a_vec) {
 	*/
 	//Above code is not strong guarantee, below is the right way.
 	vector<A> temp(a_vec);
-	for (auto& a : a_vec) {
+	for (auto& a : temp) {
 		++a;
 	}
 	swap(a_vec, temp);
 
 }
 
-class raii {
-public:
-	raii() {
-		intp = new int;
-		ap = new A();
-	}
-
-	~raii() {
-		cout << "Destructing raii object..." << endl;
-		delete intp;
-		delete ap;
-	}
-
-private:
-	int* intp;
-	A* ap;
-
-};
-
 int main() {
+	vector<A> a_vec{ A(1), A(2), A(3) };
 	try {
-		raii r;
+		increment_a(a_vec);
 	}
 	catch (...) {
 		cout << "Exception happened" << endl;

@@ -4,7 +4,7 @@ Why
 - Breaks the natual flow of your code\
 This introduced huge complexity, when I read/write code, for each line I have to check cppreference to find out if throws.
 - Not zero cost\
-This is the golden rule in C++. It is said runtime can be close to 0 cost but it definately increases binary size.
+This is the golden rule in C++. It is said runtime can be close to zero cost but it definately increases binary size.
 - Throw/catch type is somehow subtle\
 "string" is const char* instead of std::string.
 - catch(...) kind of meaningless\

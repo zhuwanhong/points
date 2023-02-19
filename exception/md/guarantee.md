@@ -8,4 +8,4 @@ Keep original state.\
 **POINT: copy and swap**
 - Nothrow (or nofail) exception guarantee\
 Never throws exceptions.\
-**POINT: noexcept specifier**
+**POINT: noexcept specifier, which is mostly in favor of compiler developers**

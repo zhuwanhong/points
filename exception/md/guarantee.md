@@ -9,6 +9,6 @@ Keep original state.\
 - Nothrow (or nofail) exception guarantee\
 Never throws exceptions.\
 **POINT: noexcept specifier, which is mostly in favor of compiler developers**\
-**POINT: C functions are always automatically noexcept.**
+**POINT: C function is always automatically noexcept.**
 
 [Back to Exception](../README.md)

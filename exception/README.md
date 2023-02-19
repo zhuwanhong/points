@@ -3,3 +3,5 @@
 
 [Exception guarantee](md/guarantee.md)
 
+[Exception in desctructor](md/desctructor.md)
+

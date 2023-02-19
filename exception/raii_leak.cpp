@@ -9,14 +9,14 @@ public:
 	}
 };
 
-class raii {
+class resource {
 public:
-	raii() {
+	resource() {
 		intp = new int;
 		ap = new A();
 	}
 
-	~raii() {
+	~resource() {
 		cout << "Destructing raii object..." << endl;
 		delete intp;
 		delete ap;
@@ -30,7 +30,7 @@ private:
 
 int main() {
 	try {
-		raii r;
+		resource r;
 	}
 	catch (...) {
 		cout << "Exception happened" << endl;

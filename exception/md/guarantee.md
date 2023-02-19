@@ -2,7 +2,7 @@
 
 - Basic exception guarantee\
 No memory or resource leak.\
-**POINT: [RAII](raii.md)**
+**POINT: [RAII](raii.md) = Resource Acquisition Is Initialization**
 - Strong exception guarantee\
 Keep original state.\
 **POINT: copy and swap**

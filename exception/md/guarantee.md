@@ -8,5 +8,5 @@ Keep original state.\
 **POINT: copy and swap**
 - Nothrow (or nofail) exception guarantee\
 Never throws exceptions.\
-**POINT: noexcept specifier, which is mostly in favor of compiler developers**
+**POINT: noexcept specifier, which is mostly in favor of compiler developers**\
 **POINT: C functions are always automatically noexcept.**
